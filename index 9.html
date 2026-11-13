@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#07111f">
 <title>EARN TOKEN</title>
-
 
 <style>
 :root {
@@ -107,9 +106,7 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
 </style>
 </head>
 
-
 <body>
-
 
 <header>
   <div class="logo">EARN TOKEN</div>
@@ -119,12 +116,10 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
   </div>
 </header>
 
-
 <!-- INSCRIPTION ET CONNEXION -->
 <section id="authSection" class="auth">
   <h1>EARN TOKEN</h1>
   <p class="muted">Bienvenue sur ta plateforme.</p>
-
 
   <div class="card" id="registerBox">
     <h2>Créer un compte</h2>
@@ -132,28 +127,22 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       <label>Nom</label>
       <input id="regNom" required placeholder="Ton nom">
 
-
       <label>Prénom</label>
       <input id="regPrenom" required placeholder="Ton prénom">
-
 
       <label>Téléphone</label>
       <input id="regPhone" type="tel" required placeholder="Ex : 70000000">
 
-
       <label>Mot de passe</label>
       <input id="regPassword" type="password" minlength="8" required placeholder="8 caractères minimum">
 
-
       <label>Confirmer le mot de passe</label>
       <input id="regConfirm" type="password" minlength="8" required placeholder="Confirmer">
-
 
       <button class="btn" type="submit">CRÉER MON COMPTE (500 FCFA Offerts)</button>
     </form>
     <div class="switch" id="goLogin">Déjà inscrit ? Se connecter</div>
   </div>
-
 
   <div class="card hidden" id="loginBox">
     <h2>Connexion</h2>
@@ -161,10 +150,8 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       <label>Téléphone</label>
       <input id="loginPhone" type="tel" required placeholder="Ton numéro">
 
-
       <label>Mot de passe</label>
       <input id="loginPassword" type="password" required placeholder="Ton mot de passe">
-
 
       <button class="btn" type="submit">SE CONNECTER</button>
     </form>
@@ -172,15 +159,12 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
   </div>
 </section>
 
-
 <!-- APPLICATION -->
 <main id="appSection" class="container hidden">
-
 
   <div class="notice">
     VERSION DE DÉMONSTRATION : les crédits sont virtuels, sans valeur monétaire réelle.
   </div>
-
 
   <!-- ACCUEIL -->
   <section class="page" id="page-home">
@@ -192,7 +176,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
         ⚠️ Dont <span id="fictionalAmt">0</span> FCFA d'avoirs fictifs créateur (Non retirables)
       </div>
     </div>
-
 
     <div class="stats">
       <div class="stat">
@@ -207,12 +190,10 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       </div>
     </div>
 
-
     <div class="card" style="margin-top:15px">
       <h2>🎁 Cadeau de bienvenue</h2>
       <p>Tu as reçu 500 FCFA à ton inscription.</p>
     </div>
-
 
     <div class="card">
       <h2>🎯 Pointage Journalier</h2>
@@ -223,14 +204,12 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
     </div>
   </section>
 
-
   <!-- CATALOGUE / NIVEAUX -->
   <section class="page hidden" id="page-orders">
     <h2>🚘 Niveaux d'investissement</h2>
     <p class="muted" style="margin-bottom:15px">
       Sélectionnez un niveau pour générer des revenus journaliers.
     </p>
-
 
     <div class="card product">
       <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700" alt="Baskets">
@@ -243,7 +222,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       </div>
     </div>
 
-
     <div class="card product">
       <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=700" alt="Scooter">
       <div class="product-info">
@@ -255,7 +233,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       </div>
     </div>
 
-
     <div class="card product">
       <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=700" alt="Voiture">
       <div class="product-info">
@@ -266,7 +243,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
         <button class="btn buyBtn" data-lvl="3" data-cost="30000" data-income="6000">Débloquer (30 000 FCFA)</button>
       </div>
     </div>
-
 
     <div class="card product">
       <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=700" alt="Tesla">
@@ -280,7 +256,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
     </div>
   </section>
 
-
   <!-- ROUE -->
   <section class="page hidden" id="page-wheel">
     <div class="card wheel">
@@ -293,7 +268,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
     </div>
   </section>
 
-
   <!-- PARRAINAGE -->
   <section class="page hidden" id="page-invite">
     <div class="card">
@@ -303,7 +277,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       <button class="btn" id="copyLink">COPIER MON LIEN</button>
     </div>
   </section>
-
 
   <!-- PORTEFEUILLE -->
   <section class="page hidden" id="page-wallet">
@@ -324,7 +297,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
     </div>
   </section>
 
-
   <!-- PROFIL -->
   <section class="page hidden" id="page-profile">
     <div class="card">
@@ -344,7 +316,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
   </section>
 </main>
 
-
 <!-- NAVIGATION -->
 <nav id="bottomNav" class="nav hidden">
   <button class="active" data-page="home"><span>🏠</span>Accueil</button>
@@ -355,23 +326,18 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
   <button data-page="profile"><span>👤</span>Profil</button>
 </nav>
 
-
 <script>
 (() => {
   "use strict";
-
 
   const USERS_KEY = "earn_token_users_v3";
   const SESSION_KEY = "earn_token_session_v3";
   const WHEEL_DELAY = 24 * 60 * 60 * 1000;
   const REWARDS = [100, 200, 300, 400, 500];
 
-
   let currentUser = null;
 
-
   const $ = id => document.getElementById(id);
-
 
   function getUsers() {
     try {
@@ -381,7 +347,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       return [];
     }
   }
-
 
   function saveUsers(users) {
     try {
@@ -393,7 +358,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
     }
   }
 
-
   function saveCurrentUser() {
     if (!currentUser) return false;
     const users = getUsers();
@@ -403,10 +367,8 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
     return saveUsers(users);
   }
 
-
   function register(event) {
     event.preventDefault();
-
 
     const nom = $("regNom").value.trim();
     const prenom = $("regPrenom").value.trim();
@@ -414,33 +376,27 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
     const password = $("regPassword").value;
     const confirm = $("regConfirm").value;
 
-
     if (!nom || !prenom || !phone || !password || !confirm) {
       alert("Remplis tous les champs.");
       return;
     }
-
 
     if (password.length < 8) {
       alert("Le mot de passe doit contenir au moins 8 caractères.");
       return;
     }
 
-
     if (password !== confirm) {
       alert("Les mots de passe ne correspondent pas.");
       return;
     }
 
-
     const users = getUsers();
-
 
     if (users.some(user => user.phone === phone)) {
       alert("Ce numéro est déjà inscrit. Connecte-toi.");
       return;
     }
-
 
     const user = {
       id: "ET-" + Date.now(),
@@ -462,10 +418,8 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       isCreator: users.length === 0
     };
 
-
     users.push(user);
     if (!saveUsers(users)) return;
-
 
     currentUser = user;
     localStorage.setItem(SESSION_KEY, user.id);
@@ -473,23 +427,18 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
     startApp();
   }
 
-
   function login(event) {
     event.preventDefault();
-
 
     const phone = $("loginPhone").value.trim();
     const password = $("loginPassword").value;
 
-
     const user = getUsers().find(item => item.phone === phone && item.password === password);
-
 
     if (!user) {
       alert("Numéro ou mot de passe incorrect.");
       return;
     }
-
 
     currentUser = user;
     localStorage.setItem(SESSION_KEY, user.id);
@@ -497,19 +446,16 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
     startApp();
   }
 
-
   function startApp() {
     $("authSection").classList.add("hidden");
     $("appSection").classList.remove("hidden");
     $("bottomNav").classList.remove("hidden");
     $("headerUser").textContent = "Bonjour " + currentUser.prenom;
 
-
     renderUser();
     updateWheel();
     showPage("home");
   }
-
 
   function renderUser() {
     const totalBalance = currentUser.balance + (currentUser.fictionalBalance || 0);
@@ -521,7 +467,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
     $("profilePhone").textContent = currentUser.phone;
     $("profileId").textContent = currentUser.id;
 
-
     if (currentUser.fictionalBalance > 0) {
       $("fictionalNotice").classList.remove("hidden");
       $("fictionalAmt").textContent = currentUser.fictionalBalance.toLocaleString();
@@ -529,34 +474,27 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       $("fictionalNotice").classList.add("hidden");
     }
 
-
     const link = "https://earntoken.app/ref?id=" + encodeURIComponent(currentUser.id);
     $("refLink").textContent = link;
 
-
     const list = $("historyList");
     list.replaceChildren();
-
 
     [...currentUser.history].reverse().forEach(item => {
       const row = document.createElement("div");
       row.className = "history-item";
 
-
       const label = document.createElement("span");
       label.textContent = item.label;
-
 
       const amount = document.createElement("strong");
       amount.className = item.reward >= 0 ? "green" : "";
       amount.style.color = item.reward < 0 ? "#ff4d4d" : "";
       amount.textContent = (item.reward >= 0 ? "+" : "") + item.reward + " FCFA";
 
-
       row.append(label, amount);
       list.appendChild(row);
     });
-
 
     document.querySelectorAll(".buyBtn").forEach(button => {
       const lvl = Number(button.dataset.lvl);
@@ -566,27 +504,22 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
     });
   }
 
-
   function showPage(page) {
     document.querySelectorAll(".page").forEach(section => {
       section.classList.add("hidden");
     });
-
 
     const target = $("page-" + page);
     if (target) {
       target.classList.remove("hidden");
     }
 
-
     document.querySelectorAll(".nav button").forEach(button => {
       button.classList.toggle("active", button.dataset.page === page);
     });
 
-
     if (page === "wheel") updateWheel();
   }
-
 
   function buyLevel(lvl, cost, income) {
     if ((currentUser.levels || []).includes(lvl)) return;
@@ -596,15 +529,12 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       return;
     }
 
-
     if (!confirm("Confirmer le déblocage du niveau " + lvl + " pour " + cost.toLocaleString() + " FCFA ?")) return;
-
 
     currentUser.balance -= cost;
     currentUser.dailyIncome += income;
     if (!currentUser.levels) currentUser.levels = [];
     currentUser.levels.push(lvl);
-
 
     currentUser.history.push({
       label: "Déblocage Niveau " + lvl,
@@ -612,21 +542,17 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       date: new Date().toISOString()
     });
 
-
     if (saveCurrentUser()) {
       renderUser();
       alert("Niveau " + lvl + " débloqué avec succès !");
     }
   }
 
-
   function playWheel() {
     if (!currentUser) return;
 
-
     const now = Date.now();
     const last = Number(currentUser.wheelLastAt || 0);
-
 
     if (last && now - last < WHEEL_DELAY) {
       alert("Tu as déjà participé aujourd'hui. Reviens après 24 heures.");
@@ -634,9 +560,7 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       return;
     }
 
-
     const reward = REWARDS[Math.floor(Math.random() * REWARDS.length)];
-
 
     currentUser.wheelLastAt = now;
     currentUser.balance += reward;
@@ -646,7 +570,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       date: new Date().toISOString()
     });
 
-
     if (saveCurrentUser()) {
       renderUser();
       $("wheelResult").textContent = "Bravo ! Tu gagnes " + reward + " FCFA !";
@@ -654,14 +577,11 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
     }
   }
 
-
   function updateWheel() {
     if (!currentUser) return;
 
-
     const last = Number(currentUser.wheelLastAt || 0);
     const remaining = WHEEL_DELAY - (Date.now() - last);
-
 
     if (last && remaining > 0) {
       $("spinBtn").disabled = true;
@@ -675,7 +595,6 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
       $("wheelTimer").textContent = "Ta participation est disponible !";
     }
   }
-
 
   function openAdmin() {
     if (!currentUser || currentUser.isCreator !== true) {
@@ -692,74 +611,4 @@ button:disabled{background:#566477;color:#ddd;cursor:not-allowed}
     if (daily === null) return;
     const values = [balance, fictional, earnings, daily].map(v => Number(v));
     if (values.some(v => !Number.isSafeInteger(v) || v < 0)) {
-      alert("Entre uniquement des nombres entiers positifs ou égaux à zéro.");
-      return;
-    }
-    const [oldBalance, oldFictional, oldEarnings, oldDaily] = [currentUser.balance || 0, currentUser.fictionalBalance || 0, currentUser.earnings || 0, currentUser.dailyIncome || 0];
-    [currentUser.balance, currentUser.fictionalBalance, currentUser.earnings, currentUser.dailyIncome] = values;
-    currentUser.history = currentUser.history || [];
-    currentUser.history.push({ label: "Modification des avoirs fictifs du créateur", reward: (values[0]+values[1])-(oldBalance+oldFictional), date: new Date().toISOString() });
-    if (saveCurrentUser()) {
-      renderUser();
-      alert("Avoirs de démonstration mis à jour. Aucun argent réel n'a été ajouté.");
-    }
-  }
-
-
-  function copyLink() {
-    const link = $("refLink").textContent;
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(link).then(() => alert("Lien copié !"));
-    } else {
-      alert("Sélectionne et copie le lien.");
-    }
-  }
-
-
-  function logout() {
-    if (!confirm("Veux-tu te déconnecter ?")) return;
-    localStorage.removeItem(SESSION_KEY);
-    currentUser = null;
-
-
-    $("appSection").classList.add("hidden");
-    $("bottomNav").classList.add("hidden");
-    $("authSection").classList.remove("hidden");
-    $("headerUser").textContent = "Bienvenue";
-    $("loginBox").classList.remove("hidden");
-    $("registerBox").classList.add("hidden");
-  }
-
-  function restoreSession() {
-    const id = localStorage.getItem(SESSION_KEY);
-    if (!id) return;
-    const user = getUsers().find(item => item.id === id);
-    if (user) { currentUser = user; startApp(); }
-    else localStorage.removeItem(SESSION_KEY);
-  }
-
-  $("registerForm").addEventListener("submit", register);
-  $("loginForm").addEventListener("submit", login);
-  $("goLogin").addEventListener("click", () => {
-    $("registerBox").classList.add("hidden");
-    $("loginBox").classList.remove("hidden");
-  });
-  $("goRegister").addEventListener("click", () => {
-    $("loginBox").classList.add("hidden");
-    $("registerBox").classList.remove("hidden");
-  });
-  document.querySelectorAll(".nav button").forEach(button => button.addEventListener("click", () => showPage(button.dataset.page)));
-  document.querySelectorAll(".buyBtn").forEach(button => button.addEventListener("click", () => buyLevel(Number(button.dataset.lvl), Number(button.dataset.cost), Number(button.dataset.income))));
-  $("spinBtn").addEventListener("click", playWheel);
-  $("copyLink").addEventListener("click", copyLink);
-  $("logoutBtn").addEventListener("click", logout);
-  $("adminTriggerBtn").addEventListener("click", openAdmin);
-  $("dailyClaimBtn").addEventListener("click", () => alert("Le pointage journalier est une simulation. Aucun revenu réel n'est généré."));
-  $("depositBtn").addEventListener("click", () => alert("Dépôt désactivé : cette démonstration ne reçoit aucun paiement réel."));
-  $("withdrawBtn").addEventListener("click", () => alert("Retrait impossible : tous les crédits sont fictifs et non convertibles en argent."));
-
-  restoreSession();
-})();
-</script>
-</body>
-</html>
+      alert("Entre uniquement des nombres en
