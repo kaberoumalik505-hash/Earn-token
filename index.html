@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07111f">
+<title>EARN TOKEN</title>
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+<header>
+  <div class="logo">EARN TOKEN</div>
+  <div style="display:flex; align-items:center; gap:10px;">
+    <div id="headerUser" class="muted">Bienvenue</div>
+    <span id="adminTriggerBtn" class="admin-trigger" title="Panneau créateur">🛡️</span>
+  </div>
+</header>
+
+
+<!-- INSCRIPTION ET CONNEXION -->
+<section id="authSection" class="auth">
+  <h1>EARN TOKEN</h1>
+  <p class="muted">Bienvenue sur ta plateforme.</p>
+
+
+  <div class="card" id="registerBox">
+    <h2>Créer un compte</h2>
+    <form id="registerForm">
+      <label>Nom</label>
+      <input id="regNom" required placeholder="Ton nom">
+
+
+      <label>Prénom</label>
+      <input id="regPrenom" required placeholder="Ton prénom">
+
+
+      <label>Téléphone</label>
+      <input id="regPhone" type="tel" required placeholder="Ex : 70000000">
+
+
+      <label>Mot de passe</label>
+      <input id="regPassword" type="password" minlength="8" required placeholder="8 caractères minimum">
+
+
+      <label>Confirmer le mot de passe</label>
+      <input id="regConfirm" type="password" minlength="8" required placeholder="Confirmer">
+
+
+      <button class="btn" type="submit">CRÉER MON COMPTE (500 FCFA Offerts)</button>
+    </form>
+    <div class="switch" id="goLogin">Déjà inscrit ? Se connecter</div>
+  </div>
+
+
+  <div class="card hidden" id="loginBox">
+    <h2>Connexion</h2>
+    <form id="loginForm">
+      <label>Téléphone</label>
+      <input id="loginPhone" type="tel" required placeholder="Ton numéro">
+
+
+      <label>Mot de passe</label>
+      <input id="loginPassword" type="password" required placeholder="Ton mot de passe">
+
+
+      <button class="btn" type="submit">SE CONNECTER</button>
+    </form>
+    <div class="switch" id="goRegister">Créer un nouveau compte</div>
+  </div>
+</section>
+
+
+<!-- APPLICATION -->
+<main id="appSection" class="container hidden">
+
+
+  <div class="notice">
+    VERSION DE DÉMONSTRATION : les crédits sont virtuels, sans valeur monétaire réelle.
+  </div>
+
+
+  <!-- ACCUEIL -->
+  <section class="page" id="page-home">
+    <div class="balance">
+      <p>Mon solde principal</p>
+      <strong><span id="balance">500</span> FCFA</strong>
+      <p class="muted">Solde de démonstration</p>
+      <div id="fictionalNotice" class="fictional-notice hidden">
+        ⚠️ Dont <span id="fictionalAmt">0</span> FCFA d'avoirs fictifs créateur (Non retirables)
+      </div>
+    </div>
+
+
+    <div class="stats">
+      <div class="stat">
+        <span class="muted">Revenu / Jour</span>
+        <strong id="dailyIncome">0</strong>
+        <small class="muted">FCFA / jour</small>
+      </div>
+      <div class="stat">
+        <span class="muted">Gains cumulés</span>
+        <strong id="earnings">0</strong>
+        <small class="muted">FCFA</small>
+      </div>
+    </div>
+
+
+    <div class="card" style="margin-top:15px">
+      <h2>🎁 Cadeau de bienvenue</h2>
+      <p>Tu as reçu 500 FCFA à ton inscription.</p>
+    </div>
+
+
+    <div class="card">
+      <h2>🎯 Pointage Journalier</h2>
+      <div class="history-item">
+        <span>Récupérer tes revenus journaliers</span>
+        <button class="btn" id="dailyClaimBtn" style="width:auto;margin:0">Récupérer</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CATALOGUE / NIVEAUX -->
+  <section class="page hidden" id="page-orders">
+    <h2>🚘 Niveaux d'investissement</h2>
+    <p class="muted" style="margin-bottom:15px">
+      Sélectionnez un niveau pour générer des revenus journaliers.
+    </p>
+
+
+    <div class="card product">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700" alt="Baskets">
+      <div class="product-info">
+        <h3>Niveau 1 : Baskets / Vélos</h3>
+        <p>Montant : 5 000 FCFA</p>
+        <p class="green">+1 000 FCFA / jour</p>
+        <span class="tag">Niveau 1</span>
+        <button class="btn buyBtn" data-lvl="1" data-cost="5000" data-income="1000">Débloquer (5 000 FCFA)</button>
+      </div>
+    </div>
+
+
+    <div class="card product">
+      <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=700" alt="Scooter">
+      <div class="product-info">
+        <h3>Niveau 2 : Scooters</h3>
+        <p>Montant : 12 000 FCFA</p>
+        <p class="green">+2 500 FCFA / jour</p>
+        <span class="tag">Niveau 2</span>
+        <button class="btn buyBtn" data-lvl="2" data-cost="12000" data-income="2500">Débloquer (12 000 FCFA)</button>
+      </div>
+    </div>
+
+
+    <div class="card product">
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=700" alt="Voiture">
+      <div class="product-info">
+        <h3>Niveau 3 : Voitures</h3>
+        <p>Montant : 30 000 FCFA</p>
+        <p class="green">+6 000 FCFA / jour</p>
+        <span class="tag">Niveau 3</span>
+        <button class="btn buyBtn" data-lvl="3" data-cost="30000" data-income="6000">Débloquer (30 000 FCFA)</button>
+      </div>
+    </div>
+
+
+    <div class="card product">
+      <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=700" alt="Tesla">
+      <div class="product-info">
+        <h3>Niveau 4 : Tesla / Voiture électrique</h3>
+        <p>Montant : 75 000 FCFA</p>
+        <p class="green">+15 000 FCFA / jour</p>
+        <span class="tag">Niveau VIP</span>
+        <button class="btn buyBtn" data-lvl="4" data-cost="75000" data-income="15000">Débloquer (75 000 FCFA)</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ROUE -->
+  <section class="page hidden" id="page-wheel">
+    <div class="card wheel">
+      <h2>🎡 Roue de la fortune</h2>
+      <p class="muted">Une participation toutes les 24 heures. Gain maximum : 500 FCFA.</p>
+      <div class="wheel-icon">🎁</div>
+      <div class="result" id="wheelResult">Tente ta chance !</div>
+      <button class="btn" id="spinBtn">LANCER LA ROUE</button>
+      <p id="wheelTimer" class="muted" style="margin-top:15px"></p>
+    </div>
+  </section>
+
+
+  <!-- PARRAINAGE -->
+  <section class="page hidden" id="page-invite">
+    <div class="card">
+      <h2>🤝 Parrainage</h2>
+      <p>Voici ton lien de parrainage :</p>
+      <div class="ref-link" id="refLink" style="margin:12px 0"></div>
+      <button class="btn" id="copyLink">COPIER MON LIEN</button>
+    </div>
+  </section>
+
+
+  <!-- PORTEFEUILLE -->
+  <section class="page hidden" id="page-wallet">
+    <div class="card">
+      <h2>💳 Dépôt Mobile Money</h2>
+      <label>Montant (FCFA)</label>
+      <input id="depositAmount" type="number" placeholder="Ex: 5000">
+      <button class="btn" id="depositBtn">DÉPOSER (SIMULÉ)</button>
+    </div>
+    <div class="card">
+      <h2>💸 Retrait</h2>
+      <label>Montant (FCFA)</label>
+      <input id="withdrawAmount" type="number" placeholder="Ex: 2000">
+      <button class="btn blue" id="withdrawBtn">RETIRER</button>
+    </div>
+    <div class="notice">
+      Ne saisis jamais ton code PIN Orange Money réel sur cette démonstration.
+    </div>
+  </section>
+
+
+  <!-- PROFIL -->
+  <section class="page hidden" id="page-profile">
+    <div class="card">
+      <h2>👤 Mon profil</h2>
+      <p class="muted">Nom complet</p>
+      <h3 id="profileName"></h3>
+      <p class="muted">Téléphone</p>
+      <h3 id="profilePhone"></h3>
+      <p class="muted">Identifiant</p>
+      <h3 id="profileId"></h3>
+      <button class="btn red" id="logoutBtn" style="margin-top:15px">SE DÉCONNECTER</button>
+    </div>
+    <div class="card">
+      <h2>📜 Historique</h2>
+      <div id="historyList"></div>
+    </div>
+  </section>
+</main>
+
+
+<!-- NAVIGATION -->
+<nav id="bottomNav" class="nav hidden">
+  <button class="active" data-page="home"><span>🏠</span>Accueil</button>
+  <button data-page="orders"><span>🚘</span>Niveaux</button>
+  <button data-page="wheel"><span>🎡</span>Roue</button>
+  <button data-page="invite"><span>🤝</span>Parrainage</button>
+  <button data-page="wallet"><span>💳</span>Portefeuille</button>
+  <button data-page="profile"><span>👤</span>Profil</button>
+</nav>
+
+
+<script src="app.js" defer></script>
+</body>
+</html>
